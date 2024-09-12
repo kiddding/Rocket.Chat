@@ -137,16 +137,16 @@ const MessageBoxActionsToolbar = ({
 
 	return (
 		<>
-			<MessageComposerActionsDivider />
+			{/* <MessageComposerActionsDivider /> */}
 			{featured.map((action) => action && renderAction(action))}
-			<GenericMenu
+			{/* <GenericMenu
 				disabled={isRecording}
 				data-qa-id='menu-more-actions'
 				detached
 				icon='plus'
 				sections={[{ title: t('Create_new'), items: createNewFiltered }, { title: t('Share'), items: shareFiltered }, ...messageBoxActions]}
 				title={t('More_actions')}
-			/>
+			/> */}
 		</>
 	);
 };

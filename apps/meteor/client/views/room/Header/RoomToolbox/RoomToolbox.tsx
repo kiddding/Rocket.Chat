@@ -88,12 +88,12 @@ const RoomToolbox = ({ className }: RoomToolboxProps) => {
 
 	return (
 		<>
-			{featuredActions.map(mapToToolboxItem)}
-			{featuredActions.length > 0 && <HeaderToolbarDivider />}
+			{/* {featuredActions.map(mapToToolboxItem)} */}
+			{/* {featuredActions.length > 0 && <HeaderToolbarDivider />} */}
 			{visibleActions.map(mapToToolboxItem)}
-			{(normalActions.length > 6 || !roomToolboxExpanded) && !!hiddenActions.length && (
+			{/* {(normalActions.length > 6 || !roomToolboxExpanded) && !!hiddenActions.length && (
 				<GenericMenu title={t('Options')} data-qa-id='ToolBox-Menu' sections={hiddenActions} placement='bottom-end' />
-			)}
+			)} */}
 		</>
 	);
 };

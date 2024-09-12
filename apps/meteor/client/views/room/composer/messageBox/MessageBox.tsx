@@ -417,7 +417,7 @@ const MessageBox = ({
 				<div ref={shadowRef} style={shadowStyle} />
 				<MessageComposerToolbar>
 					<MessageComposerToolbarActions aria-label={t('Message_composer_toolbox_primary_actions')}>
-						<MessageComposerAction
+						{/* <MessageComposerAction
 							icon='emoji'
 							disabled={!useEmojis || isRecording || !canSend}
 							onClick={handleOpenEmojiPicker}
@@ -431,7 +431,7 @@ const MessageBox = ({
 								items={formatters}
 								disabled={isRecording || !canSend}
 							/>
-						)}
+						)} */}
 						<MessageBoxActionsToolbar
 							canSend={canSend}
 							typing={typing}

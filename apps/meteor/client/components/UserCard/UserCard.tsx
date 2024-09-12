@@ -82,19 +82,19 @@ const UserCard = ({
 					</UserCardInfo>
 				)}
 				<UserCardRoles>{roles}</UserCardRoles>
-				<UserCardInfo>{localTime}</UserCardInfo>
+				{/* <UserCardInfo>{localTime}</UserCardInfo> */}
 				{bio && (
 					<UserCardInfo withTruncatedText={false} className={clampStyle} height='x60'>
 						{typeof bio === 'string' ? <MarkdownText variant='inline' content={bio} /> : bio}
 					</UserCardInfo>
 				)}
-				{onOpenUserInfo && !isLayoutEmbedded && (
+				{/* {onOpenUserInfo && !isLayoutEmbedded && (
 					<div>
 						<Button small onClick={onOpenUserInfo}>
 							{t('See_full_profile')}
 						</Button>
 					</div>
-				)}
+				)} */}
 			</Box>
 			{onClose && <IconButton mis={16} small aria-label={t('Close')} icon='cross' onClick={onClose} />}
 		</UserCardDialog>

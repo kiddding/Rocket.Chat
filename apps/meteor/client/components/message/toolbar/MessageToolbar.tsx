@@ -135,7 +135,7 @@ const MessageToolbar = ({
 						disabled={action?.disabled?.({ message, room, user, subscription, settings: mapSettings, chat, context })}
 					/>
 				))}
-			{actionsQueryResult.isSuccess && actionsQueryResult.data.menu.length > 0 && (
+			{/* {actionsQueryResult.isSuccess && actionsQueryResult.data.menu.length > 0 && (
 				<MessageActionMenu
 					options={[...actionsQueryResult.data?.menu, ...(actionButtonApps.data ?? [])].filter(Boolean).map((action) => ({
 						...action,
@@ -146,7 +146,7 @@ const MessageToolbar = ({
 					context={{ message, room, user, subscription, settings: mapSettings, chat, context }}
 					isMessageEncrypted={isE2EEMessage(message)}
 				/>
-			)}
+			)} */}
 		</FuselageMessageToolbar>
 	);
 };
